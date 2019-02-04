@@ -1,0 +1,75 @@
+body, html {
+  cursor: url(cursors/leaf-cursor.png), auto;
+}
+
+body {
+
+    margin:0 auto;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25;
+    background-image: linear-gradient(to bottom, #556b2f 20%, #ACBB78 100%);
+}
+
+
+.main-content {
+
+    vertical-align: top;
+    display: block;
+    background-color: white;
+    max-width: 1024px;
+    margin: auto;
+    margin-top: -34px;
+    padding: 30px;    
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+	cursor: url(cursors/green-select.png), auto;
+}
+
+h1 {
+    cursor: url(cursors/green-select.png), auto;
+    background-color: darkolivegreen;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: normal;
+    margin-top: 0px;
+}
+
+table {
+    width: 100%;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+th {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: darkolivegreen;
+    color: white;
+    font-weight: normal;
+    font-size: 25;
+
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 22;
+    
+    
+}
+
+tr {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.nature-images {
+    width: 33%;
+}
