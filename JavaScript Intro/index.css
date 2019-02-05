@@ -12,7 +12,8 @@ body {
 
 
 .main-content {
-
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
     vertical-align: top;
     display: block;
     background-color: white;
@@ -24,6 +25,8 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
+    cursor: url(cursors/green-select.png), auto;
 }
 
 img {
@@ -31,13 +34,14 @@ img {
 }
 
 h1 {
-    cursor: url(cursors/green-select.png), auto;
+    cursor: url(cursors/leaf-cursor.png), auto;
     background-color: darkolivegreen;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
     font-weight: normal;
     margin-top: 0px;
+    text-align: center;
 }
 
 table {
@@ -70,6 +74,16 @@ tr {
     vertical-align: middle;
 }
 
+p {
+    font-size: 26px;
+    font-weight: bold;
+}
+
 .nature-images {
     width: 32%;
+}
+
+.main-button {
+    cursor: url(cursors/leaf-cursor.png), auto;
+    margin-top: 10px;
 }

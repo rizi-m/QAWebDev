@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Nature Facts</title>
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    </head>
+    
+    <body>
+           
+        <div style="text-align: center">
+           <h1>
+               <a href="index.html">HOME</a> |
+               <a href="challenge.html">CHALLENGE</a>
+            </h1> 
+        </div>
+        
+        <div class="main-content" id="main-content-first">
+            <h2>Main Content</h2>
+            <input id="user-input" placeholder="Enter text here..." style="width: 100%;" type="text" onkeyup="pushToOutPut();">
+            <button class="main-button" onClick="removeText()">Remove Text</button>
+        </div>
+        
+        <!-- Script -->
+        <script type="text/javascript">
+            const challenge3 = function() {
+                const namer = "\"He said \"He said my name is Matt\"\"";
+                console.log(namer.toUpperCase());
+
+                const adder = parseInt("1") + 2;
+                console.log(adder);
+
+                const lister = ["First", "Second", "Third"];
+                lister.forEach((x) => console.log(x));
+                lister.push("Fourth");
+                console.log(lister);
+                lister.pop();
+                console.log(lister);
+
+                const personObj = {
+                    age: 20
+                };
+
+                const ageCheck = function(person) {
+                    return  person && (person.age > 19 && person.age < 41);
+                };
+
+                console.log(ageCheck(personObj));
+    //            console.log(`${age1} is between 20-40? ${ageCheck(age1)}`);
+    //            console.log(`${age2} is between 20-40? ${ageCheck(age2)}`);
+
+                const [i1, i2, i3] = [1,"ole",3];
+                console.log(i1);
+                console.log(i2);
+            }
+           
+            const addParagraph = function() {
+                const newHeader = document.createElement("p");
+                newHeader.textContent = "Good Morning";
+                newHeader.id = "user-output"
+                document.getElementById("main-content-first").appendChild(newHeader);
+            };
+            
+            const pushToOutPut = function() {
+                if(document.getElementById("user-output")) {
+                    document.getElementById("user-output").textContent = document.getElementById("user-input").value;
+                } else {
+                    addParagraph();
+                    pushToOutPut();
+                }
+
+            }
+            
+            const removeText = function() {
+                if(document.getElementById("user-output")) {
+                    document.getElementById("user-output").remove();
+                    document.getElementById("user-input").value = "";
+                }
+
+            }
+            
+        </script>
+    </body>
+</html>
