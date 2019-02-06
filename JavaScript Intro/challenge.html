@@ -14,10 +14,22 @@
             </h1> 
         </div>
         
-        <div class="main-content" id="main-content-first">
+        <div class="main-content main-content-first" id="main-content-first">
             <h2>Main Content</h2>
             <input id="user-input" placeholder="Enter text here..." style="width: 100%;" type="text" onkeyup="pushToOutPut();">
             <button class="main-button" onClick="removeText()">Remove Text</button>
+        </div>
+        
+        <div class="main-content" id="main-content-second">
+        
+            
+        </div>
+        
+        <div class="main-content" id="main-content-third">
+            <div style="text-align: center;">
+                <input id="user-input-kings" placeholder="Search here..." style="width: 69%;" type="text">
+                <button class="main-button" style="width: 29%;" onClick="search();">Search</button>
+            </div>        
         </div>
         
         <!-- Script -->
@@ -79,5 +91,8 @@
             }
             
         </script>
+        
+        <script type="text/javascript" src="http-requests.js"></script>
+        <script type="text/javascript" src="kings.js"></script>
     </body>
 </html>
